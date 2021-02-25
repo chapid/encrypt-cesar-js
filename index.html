@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+       <thead>
+           <th></th>
+           <th></th>
+       </thead>
+        <tbody>
+           <tr>
+               <td><label>Valor a mover</label></td>
+               <td><input type="number" id="mov" max="27" min="1"></td>
+           </tr>
+            <tr>
+                <td><label>Palabra a codificar</label></td>
+                <td><input type="text" id="encriptar"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <input type="button" onclick="encryptCesar()" value="Encriptar">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Encriptado</label></td>
+                <td><input type="text" id="salidacesar"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="descryptCesar()">Desencriptar</button></td>
+            </tr>
+            <tr>
+                <td><label>Palabra desencriptada</label></td>
+                <td><input type="text" id="salidacesarDos"></td>
+            </tr>
+            <br>
+            <tr>
+                <td colspan="2"><button onclick="forzar()">Forzar Desencriptado</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="cesar.js"></script>
+</html>
